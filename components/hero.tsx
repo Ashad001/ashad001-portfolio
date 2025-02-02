@@ -10,7 +10,7 @@ export function Hero() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">AI Software Engineer</h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-200 mb-8">
-            Result-driven undergrad, with a year of work experience, interested in Generative AI and Computer Vision.
+          Building intelligent solutions with AI.
           </p>
           <div className="flex gap-4">
             <motion.a

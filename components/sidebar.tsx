@@ -42,7 +42,7 @@ export function Sidebar() {
             </motion.div>
             <h2 className="text-xl font-bold mb-2">Ashad Abdullah</h2>
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 text-center">
-                Building intelligent solutions with cutting-edge AI technology
+                Results-driven software engineer with a passion for building scalable and efficient systems
             </p>
             <div className="space-y-2 text-center mb-4">
               <p className="text-sm">📍 Karachi, Pakistan</p>

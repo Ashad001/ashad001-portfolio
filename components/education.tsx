@@ -5,14 +5,27 @@ import { motion } from "framer-motion"
 const education = [
   {
     degree: "Bachelor of Science in Computer Science",
-    school: "University of Technology",
-    location: "Singapore",
-    period: "2018 - 2022",
+    school: "FAST, National University of Computer and Emerging Sciences",
+    location: "Karachi, Pakistan",
+    period: "2021 - Present",
     achievements: [
-      "Graduated with First Class Honours",
-      "Specialized in Artificial Intelligence and Machine Learning",
-      "Led multiple research projects in Natural Language Processing",
+      "Dean's List",
+      "Co-Founder of Climate.io",
     ],
+    courses: [
+      "Information Retrieval",
+      "Quantum Computing",
+      "Object Oriented Programming",
+      "Artificial Intelligence",
+      "Software Engineering",
+      "Computer Networks",
+      "Operating Systems",
+      "Database Systems",
+      "Computer Vision",
+      "Probability & Statistics",
+      "MicroEconomics",
+      "Accounts & Finance",
+    ]
   }
 ]
 
@@ -39,6 +52,12 @@ export function Education() {
                 <li key={i}>{item}</li>
               ))}
             </ul>
+            <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">
+              <h4 className="font-medium mb-2">Relevant Coursework:</h4>
+              <p className="leading-relaxed">
+                {edu.courses.join(" | ")}
+              </p>
+            </div>
           </motion.div>
         ))}
       </div>

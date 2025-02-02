@@ -8,20 +8,49 @@ const certificates = [
     issuer: "Coursera",
     description:
       "Supervised & unsupervised learning algorithms, Neural Networks, Clustering Algorithms & Analysis, PCA",
+    link: "https://www.coursera.org/account/accomplishments/specialization/EQ9PX55KVFB2"
   },
   {
     name: "DeepLearning.ai Tensorflow Developer",
     issuer: "Coursera",
     description: "NLP, Computer Vision, Time series prediction, Convolutional & Recurrent Neural networks, LSTMs",
+    link: "https://www.coursera.org/account/accomplishments/specialization/QRH8JXG7JGCG"
   },
   {
-    name: "Generative AI with LLMs",
-    issuer: "Coursera",
-    description:
-      "Use Cases, Types of Transformers, Fine Tuning Techniques (PEFT & LoRA), Hyperparameters tuning, Evaluation",
+    name: "Improving Deep Neural Networks",
+    issuer: "DeepLearning.AI",
+    description: "Hyperparameter Tuning, Regularization and Optimization",
+    link: "https://www.coursera.org/account/accomplishments/verify/5J5NYSJHA9TH"
   },
   {
-    
+    name: "Generative AI with Large Language Models",
+    issuer: "DeepLearning.AI",
+    description: "Concepts and applications of LLMs",
+    link: "https://www.coursera.org/account/accomplishments/verify/Z3LNQQ6ZGMM6"
+  },
+  {
+    name: "Introduction to Generative AI",
+    issuer: "Google Cloud",
+    description: "Overview of AI-generated content and applications",
+    link: "https://www.coursera.org/account/accomplishments/verify/UZJLQ7FGVVGY"
+  },
+  {
+    name: "Autonomous Agents Hackathon",
+    issuer: "LabLab AI Hackathon Event",
+    description: "Participated and successfully completed the hackathon",
+    link: "https://lablab.ai/u/@ashad_443/clm24eyya001hch193ge9l5it"
+  },
+  {
+    name: "Edge Runners 3.2",
+    issuer: "LabLab AI Hackathon Event",
+    description: "Participated and successfully completed Edge Runners 3.2",
+    link: "https://lablab.ai/u/@ashad_443/cm2rwwgju00gvk3xgj6g7kv2v"
+  },
+  {
+    name: "Llama 3 Hackathon",
+    issuer: "LabLab AI Hackathon Event",
+    description: "Participated and successfully completed Llama 3 Hackathon",
+    link: "https://lablab.ai/u/@ashad_443/cm0fgtuzm0062xpst6hbnfihj"
   }
 ]
 
@@ -40,10 +69,10 @@ export function Certificates() {
             <h3 className="text-lg font-semibold">{cert.name}</h3>
             <p className="text-gray-600 dark:text-gray-400">{cert.issuer}</p>
             <p className="text-sm text-gray-500 dark:text-gray-500 mt-2">{cert.description}</p>
+            <a href={cert.link} className="text-blue-500 hover:underline">View Certificate</a>
           </motion.div>
         ))}
       </div>
     </section>
   )
 }
-

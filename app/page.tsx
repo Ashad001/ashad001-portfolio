@@ -5,7 +5,7 @@ import { Projects } from "@/components/projects"
 import { Education } from "@/components/education"
 import { Skills } from "@/components/skills"
 import { Certificates } from "@/components/certificates"
-
+import { Contact } from "@/components/contact"
 export default function Home() {
   return (
     <div className="space-y-16">
@@ -16,6 +16,7 @@ export default function Home() {
       <Education />
       <Skills />
       <Certificates />
+      <Contact />
     </div>
   )
 }
