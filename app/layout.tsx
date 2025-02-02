@@ -4,6 +4,8 @@ import { Sidebar } from "@/components/sidebar"
 import { Header } from "@/components/header"
 import { NeuralNetwork } from "@/components/3d/NeuralNetwork"
 import type React from "react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -28,6 +30,8 @@ export default function RootLayout({
             <main className="px-4 py-20 md:py-24 md:px-8 w-full max-w-7xl mx-auto">{children}</main>
           </div>
         </div>
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   )
