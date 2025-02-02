@@ -3,28 +3,49 @@
 import { motion } from "framer-motion"
 
 const volunteeringExperiences = [
-  {
-    organization: "PROCOM' 24",
-    role: "Automation Head",
-    location: "FAST, Karachi",
-    period: "Dec. 2023 - Apr. 2024",
-    description: [
-      "Led Automation Team at FAST, overseeing key projects like Attendance Management System and ChatBot development.",
-      "Effectively managed project timelines and delegated tasks to successfully achieve and timely project completion milestones.",
-    ],
-  },
-  {
-    organization: "ACM Coders' Cup 2023",
-    role: "Automation Head",
-    location: "FAST, Karachi",
-    period: "Oct. - Dec. 2023",
-    description: [
-      "Implemented automated certificate distribution, enhancing participant experience and reducing manual workload by 80%.",
-      "Engineered a secure bulk email sending system using SMTP with logging, significantly increasing communication efficiency.",
-    ],
-  },
-]
-
+    {
+      organization: "PROCOM' 24",
+      role: "Automation Head",
+      location: "FAST, Karachi",
+      period: "Dec. 2023 - Apr. 2024",
+      description: [
+        "Led Automation Team at FAST, overseeing key projects like Attendance Management System and ChatBot development.",
+        "Effectively managed project timelines and delegated tasks to successfully achieve and timely project completion milestones.",
+      ],
+    },
+    {
+      organization: "ACM Coders' Cup 2023",
+      role: "Automation Head",
+      location: "FAST, Karachi",
+      period: "Oct. - Dec. 2023",
+      description: [
+        "Implemented automated certificate distribution, enhancing participant experience and reducing manual workload by 80%.",
+        "Engineered a secure bulk email sending system using SMTP with logging, significantly increasing communication efficiency.",
+      ],
+    },
+    {
+      organization: "Developers' Day - ACM NUCES",
+      role: "Deputy Team Lead",
+      location: "FAST, Karachi",
+      period: "Mar. - May 2023",
+      description: [
+        "Co-led the development of an AI-powered interview chatbot for fresh graduates and interns.",
+        "Integrated OpenAI API with a Flask backend and used TextBlob for sentiment analysis.",
+        "Implemented authentication, automated interview sessions, and email-based report generation.",
+      ],
+    },
+    {
+      organization: "PROCOM' 23",
+      role: "Member",
+      location: "FAST, Karachi",
+      period: "Jan. - Apr. 2023",
+      description: [
+        "Developed 'ProBot,' a chatbot using NLTK and scikit-learn to assist participants in competitions and university events.",
+        "Implemented NLP techniques to enhance chatbot responses and improve user interaction.",
+      ],
+    },
+  ];
+  
 export function Volunteering() {
   return (
     <section id="volunteering" className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">

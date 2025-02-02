@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6"
 import { motion } from "framer-motion"
 
 export function Sidebar() {
@@ -47,7 +47,6 @@ export function Sidebar() {
             <div className="space-y-2 text-center mb-4">
               <p className="text-sm">📍 Karachi, Pakistan</p>
               <p className="text-sm">📧 ashad001sp@gmail.com</p>
-              <p className="text-sm">📞 +92 (321) 308 5273</p>
             </div>
             <div className="flex space-x-4">
               <a
@@ -66,9 +65,18 @@ export function Sidebar() {
               >
                 <FaLinkedin size={24} />
               </a>
+              <a
+                href="https://x.com/ashadqu7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+              >
+                <FaXTwitter size={24} />
+              </a>
             </div>
           </div>
         </div>
+
       </aside>
 
       {/* Mobile toggle button */}

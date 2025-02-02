@@ -4,13 +4,23 @@ import { motion } from "framer-motion"
 
 const projects = [
   {
+    name: "2Q48: Exploring Quantum Reinforcement Learning in the 2048 Game",
+    date: "Nov. - Dec. 2024",
+    description: [
+      "Explored Quantum Reinforcement Learning (QRL) to solve the tile-merging game, 2048, comparing heuristic, classical RL, and QRL approaches.",
+      "Utilized parameterized quantum circuits to analyze decision-making strategies and efficiency in a grid-based environment.",
+      "Investigated the intersection of quantum computing and RL to evaluate potential real-world applications and computational challenges.",
+    ],
+    link: "https://github.com/Ashad001/2Q48",
+  },
+  {
     name: "Room Aligner",
     date: "October 2024",
     description: [
       "Developed VLM & LLM-based GenAI agents to generate design insights, improving space utilization for everyday users.",
       "Deployed the solution on Hugging Face Spaces (Docker), enabling scalable access to the design assistant and user engagement.",
     ],
-    link: "#", // Replace with actual demo link
+    link: "https://github.com/Ashad001/RoomAligner/",
   },
   {
     name: "Personify AI Chatting Evaluator and Assistant",
@@ -19,7 +29,7 @@ const projects = [
       "Integrated LLaMA 3 using Groq with APIs in Golang, enhancing real-time message suggestions and engagement scores.",
       "Deployed the tool on Hugging Face Spaces with Docker, enabling scalable & efficient model serving for seamless user access.",
     ],
-    link: "#", // Replace with actual demo link
+    link: "https://github.com/Ashad001/Chat-Evaluator-llama3-hackathon", 
   },
   {
     name: "WebBriefs",
@@ -28,7 +38,7 @@ const projects = [
       "Implemented an automated tool using CrewAI, LangChain, and JinaAI for efficient webpage information summarization.",
       "Built a FastAPI-based system to summarize webpage content in real-time, delivering short summaries via a RESTful API.",
     ],
-    link: "#", // Replace with actual LinkedIn post link
+    link: "https://github.com/Ashad001/WebBriefs", 
   },
   {
     name: "DevHire: Interview ChatBot",
@@ -37,9 +47,20 @@ const projects = [
       "Co-led and developed DevHire, a ChatBot for technical and behavioral interview preparation, achieving user satisfaction.",
       "Utilized OpenAI API in Python, integrated with frontend using FLASK APIs, integrating TextBlob for sentiment analysis.",
     ],
-    link: "#", // Replace with actual LinkedIn post link
+    link: "https://github.com/Ashad001/DevHire/", 
   },
-]
+  {
+    name: "Probot",
+    date: "April 2023",
+    description: [
+      "Developed Probot, a Voice Controlled ChatBot for technical and behavioral interview preparation, achieving user satisfaction.",
+      "Utilized OpenAI API in Python, integrated with frontend using FLASK APIs, integrating TextBlob for sentiment analysis.",
+    ],
+    link: "https://github.com/Ashad001/ProBot-A-voice-controlled-chatbot",
+  }
+];
+
+
 
 export function Projects() {
   return (

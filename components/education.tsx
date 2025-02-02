@@ -16,6 +16,7 @@ const education = [
       "Information Retrieval",
       "Quantum Computing",
       "Object Oriented Programming",
+      "Design and Analysis of Algorithms",
       "Artificial Intelligence",
       "Software Engineering",
       "Computer Networks",

@@ -8,11 +8,20 @@ const experiences = [
     title: "AI Engineer Intern",
     company: "FireBird Technologies",
     location: "Remote | Singapore",
-    period: "Aug. - Oct 2024",
+    period: "Aug. - Oct. 2024, Jan. 2025 - Present",
     description: [
       "Contributed in a KPI Chatbot integrating database functionalities, authentication, and session management using DuckDB.",
       "Designed a DSPy agent to generate synthetic data from user's natural language inputs, enhancing system functionality.",
       "Worked on designing agentic workflows tailored to business requirements, improving operational efficiency for stakeholders.",
+    ],
+  },
+  {
+    title: "Student Teaching Assistant",
+    company: "FAST-NUCES",
+    location: "Karachi, Pakistan",
+    period: "Sep. 2024 - Dec. 2024",
+    description: [
+      "Served as a Student Teaching Assistant (STA) for the course Design and Analysis of Algorithms.",
     ],
   },
   {
@@ -25,8 +34,9 @@ const experiences = [
       "Deployed data extraction & automation tools, increasing workflow efficiency and reducing manual processing time by 50%.",
       "Managed project timelines and assigned tasks using Agile methodologies, resulting successful and timely project completion.",
     ],
-  },
+  }
 ]
+
 
 export function Experience() {
   return (
