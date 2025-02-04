@@ -8,6 +8,7 @@ const education = [
     school: "FAST, National University of Computer and Emerging Sciences",
     location: "Karachi, Pakistan",
     period: "2021 - Present",
+    gpa: "3.8",
     achievements: [
       "Dean's List",
       "Co-Founder of Climate.io",
@@ -47,6 +48,9 @@ export function Education() {
             <p className="text-gray-600 dark:text-gray-400">{edu.school}</p>
             <p className="text-sm text-gray-500 dark:text-gray-500">
               {edu.location} | {edu.period}
+            </p>
+            <p className="text-sm text-gray-500 dark:text-gray-500">
+              GPA: {edu.gpa} / 4.0
             </p>
             <ul className="mt-2 list-disc list-inside">
               {edu.achievements.map((item, i) => (

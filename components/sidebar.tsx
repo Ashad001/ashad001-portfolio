@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6"
+import { FileText } from "lucide-react"
 import { motion } from "framer-motion"
 
 export function Sidebar() {
@@ -41,14 +42,26 @@ export function Sidebar() {
               />
             </motion.div>
             <h2 className="text-xl font-bold mb-2">Ashad Abdullah</h2>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 text-center">
-                Results-driven software engineer with a passion for building scalable and efficient systems
+            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 text-center px-4">
+              Results-driven software engineer with a passion for building scalable and efficient systems
             </p>
             <div className="space-y-2 text-center mb-4">
               <p className="text-sm">📍 Karachi, Pakistan</p>
               <p className="text-sm">📧 ashad001sp@gmail.com</p>
             </div>
-            <div className="flex space-x-4">
+
+            {/* Resume Button */}
+            <a
+              href="https://drive.google.com/file/d/1pSu_AaO_lst8opMBwXwxNhCLYrAmEFPc/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-blue-600 text-white px-6 py-2 rounded-full mb-6 hover:bg-blue-700 transition-colors"
+            >
+              <FileText className="w-4 h-4" />
+              <span className="text-sm font-medium">View Resume</span>
+            </a>
+
+            <div className="flex space-x-6">
               <a
                 href="https://github.com/Ashad001"
                 target="_blank"
@@ -67,6 +80,7 @@ export function Sidebar() {
               </a>
               <a
                 href="https://x.com/ashadqu7"
+
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
@@ -74,9 +88,9 @@ export function Sidebar() {
                 <FaXTwitter size={24} />
               </a>
             </div>
+
           </div>
         </div>
-
       </aside>
 
       {/* Mobile toggle button */}

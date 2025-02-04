@@ -35,6 +35,13 @@ const certificates = [
     link: "https://www.coursera.org/account/accomplishments/verify/UZJLQ7FGVVGY"
   },
   {
+    name: "Introduction to Generative AI for Software Development",
+    issuer: "Google Cloud",
+    description: "Leverage generative AI to enhance development, optimize code, and speed up prototyping.",
+    link: "https://www.coursera.org/account/accomplishments/verify/6ZJ46Y9OTVXK"
+
+  },
+  {
     name: "Autonomous Agents Hackathon",
     issuer: "LabLab AI Hackathon Event",
     description: "Participated and successfully completed the hackathon",
