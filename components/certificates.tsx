@@ -1,6 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { SectionWrapper } from "@/components/section-wrapper"
+
 
 const certificates = [
   {
@@ -63,6 +65,7 @@ const certificates = [
 
 export function Certificates() {
   return (
+    <SectionWrapper id="certificates">
     <section id="certificates" className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
       <h2 className="text-2xl font-bold mb-4">Certificates</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -81,5 +84,6 @@ export function Certificates() {
         ))}
       </div>
     </section>
+    </SectionWrapper>
   )
 }

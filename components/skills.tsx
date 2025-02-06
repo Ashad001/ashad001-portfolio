@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { FaPython, FaReact, FaGitAlt, FaLinux, FaAws, FaDocker } from "react-icons/fa"
+import { SectionWrapper } from "@/components/section-wrapper"
 import {
   SiCplusplus,
   SiJavascript,
@@ -87,10 +88,12 @@ const skills = [
 
 export function Skills() {
   return (
+    <SectionWrapper id="skills">
     <section id="skills" className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
       <h2 className="text-2xl font-bold mb-4">Skills & Expertise</h2>
       <div className="space-y-6">
         {skills.map((skillCategory, index) => (
+
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 20 }}
@@ -113,6 +116,8 @@ export function Skills() {
         ))}
       </div>
     </section>
+    </SectionWrapper>
   )
 }
+
 

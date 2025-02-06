@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { SectionWrapper } from "@/components/section-wrapper"
 
 const volunteeringExperiences = [
     {
@@ -48,6 +49,7 @@ const volunteeringExperiences = [
   
 export function Volunteering() {
   return (
+    <SectionWrapper id="volunteering">
     <section id="volunteering" className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
       <h2 className="text-2xl font-bold mb-4">Volunteer Experience</h2>
       <div className="space-y-6">
@@ -73,6 +75,8 @@ export function Volunteering() {
         ))}
       </div>
     </section>
+    </SectionWrapper>
   )
 }
+
 

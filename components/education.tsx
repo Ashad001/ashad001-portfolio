@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { SectionWrapper } from "@/components/section-wrapper"
 
 const education = [
   {
@@ -11,7 +12,6 @@ const education = [
     gpa: "3.8",
     achievements: [
       "Dean's List",
-      "Co-Founder of Climate.io",
     ],
     courses: [
       "Information Retrieval",
@@ -33,9 +33,11 @@ const education = [
 
 export function Education() {
   return (
+    <SectionWrapper id="education">
     <section id="education" className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
       <h2 className="text-2xl font-bold mb-4">Education</h2>
       <div className="space-y-6">
+
         {education.map((edu, index) => (
           <motion.div
             key={index}
@@ -56,7 +58,16 @@ export function Education() {
               {edu.achievements.map((item, i) => (
                 <li key={i}>{item}</li>
               ))}
+              <li>
+                Co-Founder of &nbsp;
+                <a href="https://www.linkedin.com/company/climateio/" target="_blank" rel="noopener noreferrer" className="underline">
+                   Climate.io
+                </a>
+              </li>
+
             </ul>
+
+
             <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">
               <h4 className="font-medium mb-2">Relevant Coursework:</h4>
               <p className="leading-relaxed">
@@ -67,6 +78,7 @@ export function Education() {
         ))}
       </div>
     </section>
+    </SectionWrapper>
   )
 }
 

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Calendar, ExternalLink, Github } from "lucide-react"
-
+import { SectionWrapper } from "@/components/section-wrapper"
 const projects = [
   {
     name: "2Q48: Exploring Quantum Reinforcement Learning in the 2048 Game",
@@ -119,6 +119,7 @@ const projects = [
 
 export function Projects() {
   return (
+    <SectionWrapper id="projects">
     <section id="projects" className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
       <h2 className="text-2xl font-bold mb-4">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -166,6 +167,8 @@ export function Projects() {
         ))}
       </div>
     </section>
+    </SectionWrapper>
   )
 }
+
 
