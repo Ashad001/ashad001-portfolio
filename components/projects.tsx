@@ -131,13 +131,13 @@ export function Projects() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.1 }}
           >
-            <div className="flex justify-between items-start">
-              <h3 className="text-xl font-semibold text-white pr-8">{project.name}</h3>
+            <div className="flex justify-between items-start mb-2">
+                {project.name}
               <a
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 transition-colors absolute top-6 right-6"
+                className="text-blue-400 hover:text-blue-300 transition-colors"
               >
                 <Github className="w-6 h-6" />
               </a>

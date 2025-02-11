@@ -38,7 +38,7 @@ const certificates = [
   },
   {
     name: "Introduction to Generative AI for Software Development",
-    issuer: "Google Cloud",
+    issuer: "DeepLearning.AI",
     description: "Leverage generative AI to enhance development, optimize code, and speed up prototyping.",
     link: "https://www.coursera.org/account/accomplishments/verify/6ZJ46Y9OTVXK"
 
